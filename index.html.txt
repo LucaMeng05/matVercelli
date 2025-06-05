@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>√ercelli - Sito di Matematica</title>
+
+  <!-- MathJax per il rendering della radice -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      color: #000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px 60px;
+      position: relative;
+      background: transparent;
+    }
+
+    header {
+      margin-top: 20px;
+      text-align: left;
+      padding: 30px 40px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.25);
+      max-width: 600px;
+      width: 100%;
+      z-index: 1;
+      color: #000;
+    }
+    .math-title {
+      font-size: 3em;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 1.3em;
+      color: #000;
+      margin: 0;
+    }
+    .container {
+      margin-top: 40px;
+      max-width: 600px;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .section {
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      padding: 30px 40px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.15);
+      color: #000;
+      width: 100%;
+    }
+    .section h2 {
+      font-size: 1.8em;
+      color: #000;
+      border-left: 6px solid #000;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin: 15px 0;
+    }
+    a {
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease, color 0.3s ease;
+      font-size: 1.1em;
+    }
+    a:hover {
+      color: #444;
+      border-bottom-color: #444;
+    }
+    @media (max-width: 650px) {
+      body {
+        padding: 20px 15px;
+        align-items: center;
+      }
+      header, .container {
+        max-width: 100%;
+      }
+      header {
+        text-align: center;
+      }
+      .container {
+        align-items: center;
+      }
+      .section {
+        width: 100%;
+      }
+      .math-title {
+        font-size: 2.4em;
+      }
+    }
+  </style>
+</head>
+  <body style="background: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed; background-size: cover;">
+
+  <header>
+    <div class="math-title">\( \sqrt{\text{ercelli}} \)</div>
+    <p>Materiali matematici, gare ed esercizi</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Gare del Vercelli</h2>
+      <ul>
+        <li><a href="gli_alieni_sono_fra_noi.pdf" target="_blank" rel="noopener noreferrer">Gara degli studenti – Anno 2025</a>
+</li>
+        <li><a href="pdf/gara2.pdf" target="_blank" rel="noopener noreferrer">Work in progress</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Problemi di Rainero</h2>
+      <ul>
+        <li><a href="pdf/rainero_problemi_base.pdf" target="_blank" rel="noopener noreferrer">Problemi Base</a></li>
+        <li><a href="pdf/rainero_avanzati.pdf" target="_blank" rel="noopener noreferrer">Problemi Avanzati</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
